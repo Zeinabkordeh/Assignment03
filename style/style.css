@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------
+/* --------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Generic (CALLED IN NORMALIZE.CSS)
@@ -13,7 +13,7 @@
 
 /* Typography
 --------------------------------------------- */
-@font-face {
+/* @font-face {
 	font-family: 'oswald';
 	font-weight: bold;
 	font-style: normal;
@@ -56,13 +56,13 @@ body {
 
 h1{
     font-family: 'oswald' , Arial, Helvetica, sans-serif;
-}
+} */
 
 /* Header
 --------------------------------------------- */
 
 
-.site-header {
+/* .site-header {
     display: grid;
     background-color: #ffffff;
     color: #000000;
@@ -215,13 +215,13 @@ hr {
     }
     
     
-}
+} */
 
 
 
 /* Links
 --------------------------------------------- */
-a{
+/* a{
     color: #f04a4a;
     text-decoration: none;
 }
@@ -235,14 +235,14 @@ a:visited {
 a:hover,
 a:active {
     color:#cf0808;
-}
+} */
 
 
 
 /* Main
 --------------------------------------------- */
 
-
+/* 
 .first-banner{
     display: flex;
     width: 100%;
@@ -319,11 +319,11 @@ a:active {
         margin: 0 18rem 10rem 18rem;
     }
     
-}
+} */
 /* Section
 --------------------------------------------- */
 
-#info-wrapper{
+/* #info-wrapper{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     justify-items: center;
@@ -387,11 +387,11 @@ a:active {
 
 .text-info {
     margin-top: 1rem;
-}
+} */
 
 /* Footer
 --------------------------------------------- */
-
+/* 
 .footer {
     background-color: #040817;
     color: #fff;
@@ -402,8 +402,12 @@ a:active {
   }
 
 
-  
-  
- 
-  
-  
+   */
+
+/* CSS TRIAL
+--------------------------------------------- */
+
+div {
+    width: 320px;
+    padding: 10px;
+}
