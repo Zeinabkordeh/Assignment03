@@ -393,7 +393,7 @@ a:active {
 --------------------------------------------- */
 
 .footer {
-    background-color: #9d9ea2;
+    background-color: #ceced1;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -411,7 +411,17 @@ a:active {
 .team {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    /* padding: 2rem; */
+}
+
+.local-stations ul {
+    list-style: none;
+}
+
+.local-stations {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
