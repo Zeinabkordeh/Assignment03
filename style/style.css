@@ -402,10 +402,16 @@ a:active {
   }
 
 .footer-apps{
-    /* padding: 2px; */
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
 }
 
 
