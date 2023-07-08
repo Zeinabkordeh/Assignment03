@@ -3,3 +3,14 @@ div {
     padding: 10px;
 }
 
+img {
+    width: 350px; 
+    height: 200px
+}
+
+.heading-one, .placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
