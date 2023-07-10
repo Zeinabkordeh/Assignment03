@@ -1,16 +1,8 @@
-div {
-    width: 320px;
-    padding: 10px;
+body {
+    background-color: white;
 }
 
-img {
-    width: 350px; 
-    height: 200px
-}
-
-.heading-one, .placeholder {
+.main-news {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     
 }
