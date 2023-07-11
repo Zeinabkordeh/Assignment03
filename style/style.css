@@ -12,6 +12,11 @@
     padding: 20px 40px;
   }
 
+img {
+    display: grid;
+    justify-content: center;
+}
+
 
 .site-wrapper {
 max-width: 1200px;
@@ -21,13 +26,36 @@ max-width: 1200px;
   /* border: 15px ;
   padding: 50px;
   margin: 20px; */
-  text-align: center;
-  margin-left: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
 }
 
-.supporting-content {
+.list {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 10px;
     margin-bottom: 10px;
+}
+
+.card-content-bottom {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bottom-list h3 {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.bottom-one {
+    display: grid;
+    grid-template-columns: 1fr;
 }
