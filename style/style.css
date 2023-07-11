@@ -452,10 +452,11 @@ a:active {
 .story:hover {
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
-
-.stories-grid a{
+  
+.stories-grid a[target="_blank"] {
     color: black;
-}
+    text-decoration: underline;
+  }
   
  
   
