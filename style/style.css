@@ -456,8 +456,17 @@ a:active {
 .stories-grid a[target="_blank"] {
     color: black;
     text-decoration: underline;
-  }
-  
+}
+
+.stories-grid a:nth-child(10),
+.stories-grid a:nth-child(12),
+.stories-grid a:nth-child(14) {
+font-style: italic;
+color: #545454;
+}
+
+
+
  
   
   
