@@ -15,6 +15,7 @@
 img {
     display: grid;
     justify-content: center;
+    max-width: 700px;
 }
 
 
@@ -27,15 +28,19 @@ max-width: 1200px;
   padding: 50px;
   margin: 20px; */
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
+  justify-content: space-around;
+  justify-items: center;
 }
 
 .list {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
-    margin-bottom: 10px;
+    /* grid-template-columns: 1fr 3fr;
+    gap: 10px;  
+    margin-bottom: 10px; */
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
 }
 
 .card-content-bottom {
