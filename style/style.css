@@ -282,6 +282,7 @@ a:active {
     text-align: justify;
     color: #fff;
 }
+/* footer css */
 .footer {
     background-color: #ceced1;
     color: #fff;
@@ -314,6 +315,7 @@ a:active {
     flex-wrap: wrap;
 }
 
+/* css for grid */
 .stories-grid {
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -357,6 +359,7 @@ color: #545454;
 }
 
 @media screen and (min-width: 615px) {
+    /* css for min-width 615px */
     .footer {
         background-color: #ceced1;
         color: #fff;
@@ -423,7 +426,7 @@ color: #545454;
         color: black;
         text-decoration: underline;
     }
-    
+    /* added pseudo selector nth child */
     .stories-grid a:nth-child(10),
     .stories-grid a:nth-child(12),
     .stories-grid a:nth-child(14) {
@@ -434,6 +437,7 @@ color: #545454;
 }
 
 @media screen and (min-width: 68em) {
+    /* css for min width 68em */
     .introTitle {
         margin-top: 6rem;
     }
