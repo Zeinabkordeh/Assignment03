@@ -105,3 +105,13 @@ h3[title="important"] {
     font-weight: bold;
     color: blue;
 }
+
+h3 ~ p {
+    /* Styles for general sibling selector */
+    color: green;
+}
+
+h3 + p {
+    /* Styles for adjacent sibling selector */
+    font-style: italic;
+}
