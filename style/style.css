@@ -437,7 +437,7 @@ color: #545454;
 }
 
 @media screen and (min-width: 68em) {
-    /* css for min width 68em */
+        /* css for min width 68em */
     .introTitle {
         margin-top: 6rem;
     }
@@ -542,7 +542,7 @@ color: #545454;
     .stories-grid a:nth-child(14) {
     font-style: italic;
     color: #545454;
-    }
+    } 
 }
 /* Section
 --------------------------------------------- */
@@ -618,8 +618,8 @@ color: #545454;
 
 
 
-
-
+  
+  
  
   
   
