@@ -11,22 +11,63 @@
 <body>
     <div class="site-wrapper" id="mainBody">
         <a href="#site-main" class="screen-reader-text"  > Skip to content</a>
-        
+
+            
         <div class="header-wrapper">
+            
             <header class="header">
-                <div class="site-header">
+                
+                <section class="site-header">
                     <a href="index.html">
                         <img id="logo" src="./image/CBC_logo.svg" alt="CBC Logo">
                     </a>
+                    
+                    <nav class="site-navigation" id="site-navigation">
 
-                    <a class="menuButton" id="menuButton" role="button" href="#">
-                        Menu
-                        <span class="icon">
-                            <svg viewBox="0 0 10 10" focusable="false" class="chevronIcon" width="10px" height="10px" role="presentation">
-                                <g><path d="M10,0v3L5,7L0,3V0l5,4L10,0z"></path></g>
-                            </svg>
-                        </span>
-                    </a>
+                        <button class="menuButton" id="menuButton" role="button" aria-expanded="false" href="#">
+                            <span id="menu-button">Menu</span>
+                            <span class="menuButtonCloseTitle" id="close-button">Close</span>
+                            <span class="icon" id="iconMenu">
+                                <svg viewBox="0 0 10 10" focusable="false" class="chevronIcon" id="chevronIconId" width="10px" height="10px" role="presentation">
+                                    <g><path d="M10,0v3L5,7L0,3V0l5,4L10,0z" ></path></g>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <ul class="nav-menu" id="header-menu">
+                            <li class="nav-item news-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Radio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Music</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Live</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">TV</a>
+                            </li>
+                            <li class="nav-item watch-item">
+                                <a class="nav-link" href="#">Watch</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link  nav-arts" href="#">Arts</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link  nav-books" href="#">Books</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link  nav-docs" href="#">Docs</a>
+                            </li>
+                        </ul>
+        
+                    </nav>
 
                     <a class="navLink search" aria-expanded="false" aria-label="Search" id="searchButton" role="button" href="/search">
                         <span class="icon">
@@ -39,17 +80,104 @@
                         <span class="icon"><svg class="profileIcon profilePic" width="15px" height="15px" viewBox="0 0 24 24" focusable="false"><g xmlns="http://www.w3.org/2000/svg" id="Asset-7" transform="translate(6.000000, 0.000000)"><path d="M-3.2,22.9c-0.7,0-1.2-0.7-0.9-1.3C-3.4,19.4-1,15.3,6,15.3c7,0,9.4,4.1,10.2,6.3c0.2,0.7-0.2,1.3-0.9,1.3H-3.2z" id="Path"></path><ellipse id="Oval" cx="6" cy="7" rx="5.8" ry="5.9"></ellipse></g></svg></span>
                         <span class="profileText">Sign In</span>
                     </button>
-                </div>
-        
+
+                </section>
+
+                <section class="global-header">
+
+                    <div class="global-nav">
+                    <a class="global-link" id="covid-link" href="#">COVID-19</a>
+                    <a class="global-link" href="#">local updates</a>
+                    <a class="global-link" href="#">watch live</a>
+                    </div>
+                    
+                </section>
+                
             </header>
-            
+           
         </div>
+
         <main>
             <section>
                 <div class="first-banner">
-                    <img src="https://tpc.googlesyndication.com/daca_images/simgad/12661810172190413118" alt="first-banner">
+                    <img id="main-banner-photo" src="./image/photo.png" alt="first-banner" >
+                    <img id="second-banner-photo" src="./image/photoresize.png" alt="first-banner-resize" >
                 </div>
             </section>
+
+            <section class="second-banner">
+                <h2>My Local</h2>
+                <a class="local-city" href="https://www.cbc.ca/news/canada/ottawa">Ottawa</a>
+                
+                <ul class="image-info">
+
+                    <li  class="contentWrapper">
+                        <a class="card-href" href="/news/politics/terrorism-charges-ottawa-2018-19-documents-1.6900043">
+                            <div class="cardImageWrap">
+                                <figure class="imageMedia">
+                                    <div class="placeholder">
+                                        <img  alt="image" 
+                                         src="https://i.cbc.ca/1.6898641.1688652327!/fileImage/httpImage/image.jpeg_gen/derivatives/16x9_780/patrick-gordon-macddonald-court-sketch.jpeg">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="headline">Charges against alleged Ottawa neo-Nazi linked to offences in 2018-19, court documents allege</h3>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li  class="contentWrapper">
+                        <a class="card-href"  href="/news/canada/ottawa/ottawa-police-hate-incident-data-july-2023-1.6899819">
+                            <div class="cardImageWrap">
+                                <figure class="imageMedia">
+                                    <div class="placeholder">
+                                        <img alt="image2" 
+                                         src="https://i.cbc.ca/1.1479438.1680711239!/httpImage/image.jpg_gen/derivatives/16x9_780/ottawa-police-badge-crest-generic-ops.jpg">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="headline">Hate incidents jump nearly 24% in Ottawa, police say</h3>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li  class="contentWrapper">
+                        <a class="card-href" href="/news/canada/ottawa/extradition-proceedings-should-be-straighforward-nation-river-cold-case-1.6898921">
+                            <div class="cardImageWrap">
+                                <figure class="imageMedia">
+                                    <div class="placeholder">
+                                        <img loading="lazy" alt="image3" 
+                                         src="https://i.cbc.ca/1.4850993.1688667265!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/robert-currie.jpg">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="headline" >Law prof confident extradition in Nation River Lady case will be straightforward</h3>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li class="contentWrapper">
+                        <a class="card-href"  href="/news/canada/ottawa/siu-investigation-kingston-july-6-2023-1.6900042">
+                            <div class="cardImageWrap">
+                                <figure class="imageMedia">
+                                    <div class="placeholder">
+                                        <img  alt="image4" 
+                                        src="https://i.cbc.ca/1.5653485.1678566844!/cumulusImage/httpImage/image.jpg_gen/derivatives/16x9_780/siu.jpg">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="headline" >Police watchdog investigating death of man in Kingston</h3>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
             <div class="stories-grid">
                 <!-- A grid at the bottom of the page displaying more news stories -->
                 <a href="" target="_blank">
@@ -203,3 +331,4 @@
     </div>
 </body>
 </html>
+

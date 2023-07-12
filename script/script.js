@@ -9,6 +9,7 @@
 
 	const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
 
+
 	// Return early if the button don't exist.
 	if ( 'undefined' === typeof button ) {
 		return;
@@ -26,16 +27,29 @@
 		menu.classList.add( 'nav-menu' );
 	}
 
-	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
-	button.addEventListener( 'click', function() {
-		siteNavigation.classList.toggle( 'toggled' );
+	const menuButton = document.getElementById ('menu-button');
+	const closeButton = document.getElementById ('close-button');
+	const chevronId =document.getElementById ('chevronIconId');
 
-		if ( button.getAttribute( 'aria-expanded' ) === 'true' ) {
-			button.setAttribute( 'aria-expanded', 'false' );
+
+
+	// Toggle the .toggled class and the aria-expanded value each time the button is clicked.
+	button.addEventListener('click', function() {
+		siteNavigation.classList.toggle('toggled');
+	
+		if (button.getAttribute('aria-expanded') === 'true') {
+			button.setAttribute('aria-expanded', 'false');
+			menuButton.classList.remove('menuButtonCloseTitle');
+			closeButton.classList.add('menuButtonCloseTitle');
+			chevronId.style = "";
+
 		} else {
-			button.setAttribute( 'aria-expanded', 'true' );
+			button.setAttribute('aria-expanded', 'true');
+			menuButton.classList.add('menuButtonCloseTitle');
+			closeButton.classList.remove('menuButtonCloseTitle');
+			chevronId.style ="transform: rotate(180deg); padding-top: .3rem";
 		}
-	} );
+	});
 
 	// Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
 	document.addEventListener( 'click', function( event ) {
@@ -44,6 +58,9 @@
 		if ( ! isClickInside ) {
 			siteNavigation.classList.remove( 'toggled' );
 			button.setAttribute( 'aria-expanded', 'false' );
+			menuButton.classList.remove('menuButtonCloseTitle');
+			closeButton.classList.add('menuButtonCloseTitle');
+			chevronId.style = "";
 		}
 	} );
 
