@@ -702,7 +702,7 @@ font-style: italic;
 color: #07268e;
 }
 
-@media screen and (min-width: 615px) {
+@media screen and (min-width: 700px) {
     /* css for min-width 615px */
     .footer {
         padding: 20px;
