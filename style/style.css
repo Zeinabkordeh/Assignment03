@@ -424,6 +424,10 @@ a:focus {
     top: 8rem;
 }
 
+h3 [class= "headline"]{
+    margin-left: 4rem;
+}
+
 /* CSS animations and  Attribute Selector ............................... */
 
  img[class="image-ban"] {
@@ -443,15 +447,13 @@ a:focus {
 
 @media (max-width: 37rem) and (min-width: 24rem) {
     .first-banner img {
-      display: none;
+      display: inline;
+      max-width: 25rem;
     }
     .first-banner{
     justify-content: center; 
    }
 
-   #second-banner-photo {
-    display: inline;
-    }
   }
 
   @media (max-width: 74rem) and (min-width: 37.1rem) {
@@ -461,19 +463,15 @@ a:focus {
       .first-banner{
       justify-content: center; 
       }
-     #second-banner-photo {
-        display: none;
-      }
+     
     }
 
     @media (max-width: 360px) and (min-width: 320px) {
         .first-banner img {
-            max-width: 48rem;
+            max-width: 45rem;
+
         }
 
-        #second-banner-photo {
-            display: none;
-            }
     }
 
 /* Section
@@ -504,20 +502,8 @@ a:focus {
     text-align: left; 
 }
 
-/* Descendant selectore ............................... */
 
 
-div  h3 {
-    color: white;
-    font-size: .9rem;
-    text-align: justify;
-    align-items: center;
-    line-height: 1.5rem;
-    font-weight: 200;
-    box-sizing: content-box;
-    max-width: 15rem;
-    margin: 0 3rem ; 
-}
 
 /* Child selectore ............................... */
 
@@ -541,11 +527,12 @@ section > a {
 }
 
 
+
 .contentWrapper {
-    display: block;
+    display:block ;
     border: .1rem solid var(--second-color);
-    margin: 1rem .5rem;
-    padding: 1rem;
+    margin: .3rem .3rem;
+    padding: .2rem;
 }
 
 
@@ -556,6 +543,10 @@ section > a {
 
 .card-href{
     text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right:  1.5rem;
 }
 
 .placeholder {
@@ -564,8 +555,25 @@ section > a {
     margin-left: 1.5rem;
 }
 
+/* Descendant selectore ............................... */
+
+
+div  h3 {
+    color: white;
+    font-size: .9rem;
+    text-align: justify;
+    align-items: center;
+    line-height: 1.5rem;
+    font-weight: 200;
+    box-sizing: content-box;
+    max-width: 15rem;
+    margin: 0 1rem ; 
+}
+
+
 .card-information h3{
-    margin-right: 1.5rem;
+    margin-right: 0;
+    margin-left: 1.5rem;
 }
 
 
@@ -588,10 +596,12 @@ section > a {
 
     h3.headline{
         margin-left: 3rem;
+        margin-top: 3rem;
     }
 
     .card-information h3 {
         font-size: 1rem;
+
     }
 
     #second-banner-photo {
@@ -651,7 +661,7 @@ section > a {
     display: grid;
     grid-template-columns: repeat(1fr);
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem 0;
     margin: 1rem 0;
     justify-content: center;
     position: relative;
@@ -703,7 +713,7 @@ font-style: italic;
 color: #07268e;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 720px) {
     /* css for min-width 615px */
     .footer {
         padding: 20px;
@@ -770,6 +780,7 @@ color: #07268e;
         color: black;
         text-decoration: underline;
     }
+
     /* added pseudo selector nth child */
     .stories-grid a:nth-child(10),
     .stories-grid a:nth-child(12),
@@ -879,11 +890,8 @@ color: #07268e;
 }
 
 
-
-
 .middle{
     display: flex;
-    margin: 1rem;
     position: relative;
     top: 8rem;
     justify-content: center;
@@ -965,43 +973,32 @@ color: #07268e;
 }
 
 
-
-
 .bottom-one {
     display: flex;
     width: 323px;
     padding: 10px;
-    margin: -1px;
-    margin: 1rem;
     border: 2px solid gray;
-    
-}
-
-.bottom-two {
-    display: flex;
-    width: 323px;
-    padding: 10px;
-    margin: -1px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: 2px solid gray;
+    margin: 2rem 2rem;
 }
 
 .h3Lists {
     font-size: 15px;
     text-align: center;
-    margin: .05rem;
+    margin: 1rem;
     border: .1rem solid gray;
+    padding: 1rem;
+    font-weight: bold;
 }
 
 .bottom-list {
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
+    margin: 1rem;
 }
 
 .bottom-list .h3List {
-    font-size: .8rem;
+    font-size: .9rem;
     
 }
 
@@ -1023,7 +1020,7 @@ color: #07268e;
 } */
 
 .title-bottom{
-    margin-top: .6rem;
+    margin-top: 0;
     font-size: 1rem;
 }
 
