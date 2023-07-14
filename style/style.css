@@ -78,6 +78,13 @@ h1{
     font-family: 'oswald' , Arial, Helvetica, sans-serif;
 }
 
+/* pseudo selectors ............................... */
+
+
+div a:first-child {
+    color: #072179;
+}
+
 /* Header
 --------------------------------------------- */
 
@@ -246,7 +253,7 @@ h1{
     list-style: none;
     text-align: center;
     display: none;
-    background-color: #4e4e4e;
+    background-color: #a5a5a5;
     position: fixed;
     padding: 1rem;
     top: 3.5rem;
@@ -283,12 +290,11 @@ h1{
 .nav-link{
 	padding: .5rem;
     color: rgb(255, 255, 255);
-    background-color: #4e4e4e;
     width: 3rem;
 }
 
 
-/* CSS CSS transforms ............................... */
+/* CSS transforms ............................... */
 
 
 .nav-link:hover {
@@ -418,9 +424,9 @@ a:focus {
     top: 8rem;
 }
 
-/* CSS animations ............................... */
+/* CSS animations and  Attribute Selector ............................... */
 
-.first-banner img {
+ img[class="image-ban"] {
     max-width: 53.5rem;
     animation-name: banner;
     animation-duration: 2s;
@@ -652,6 +658,7 @@ section > a {
     top: 8rem;
     background-color: var(--second-color);
   }
+
   
 .stories-grid img {
     height: 75px;
@@ -681,11 +688,18 @@ section > a {
     background-color: white;
 }
 
+.stories-grid a:last-child {
+    font-style: italic;
+}
+
+
+/* pseudo selectors ............................... */
+
 .stories-grid a:nth-child(10),
 .stories-grid a:nth-child(12),
 .stories-grid a:nth-child(14) {
 font-style: italic;
-color: #545454;
+color: #07268e;
 }
 
 @media screen and (min-width: 615px) {
@@ -760,7 +774,7 @@ color: #545454;
     .stories-grid a:nth-child(12),
     .stories-grid a:nth-child(14) {
     font-style: italic;
-    color: #545454;
+    color: #07268e;
     }
 
 }
@@ -856,7 +870,7 @@ color: #545454;
     .stories-grid a:nth-child(12),
     .stories-grid a:nth-child(14) {
     font-style: italic;
-    color: #545454;
+    color: #07268e;
     } 
 
 }
@@ -990,17 +1004,20 @@ color: #545454;
     cursor: pointer;
 }
 
-.h3List[title="important"] {
+/* .h3List[title="important"] {
     font-weight: bold;
-    color: blue;
+} */
+
+.title-bottom{
+    margin-top: .3rem;
 }
 
-.h3List ~ p {
+h2 ~ h3 {
     /* Styles for general sibling selector */
-    color: green;
+    font-weight: bold;
 }
 
-.h3List + p {
-    /* Styles for adjacent sibling selector */
+h2 + h3 {
+    /* Styles for adjacent Adjacent Selector */
     font-style: italic;
 }
